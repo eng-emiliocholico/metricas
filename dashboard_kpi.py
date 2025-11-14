@@ -538,12 +538,6 @@ def guardar_datos_a_excel(n_clicks, datos_guardados):
         print(f"Error al guardar: {e}")
         return f"❌ Error al guardar los datos: {e}"
 
-url = "http://127.0.0.1:8050/"
-port = 8050 
-def open_browser():
-    threading.Timer(1.5, lambda: webbrowser.open_new(url)).start()
-
 if __name__ == '__main__':
-    if not dash.get_app().server.debug or dash.get_app().server.config.get("ENV") == "development":
-        open_browser()
-    app.run(debug=True, port=port)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8050)), debug=False)
+
