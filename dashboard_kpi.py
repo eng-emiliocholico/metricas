@@ -539,7 +539,8 @@ def guardar_datos_a_excel(n_clicks, datos_guardados):
         return f"❌ Error al guardar los datos: {e}"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8050)), debug=False)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)), debug=False)
+
 
 
 
