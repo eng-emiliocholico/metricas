@@ -1,4 +1,5 @@
-import pandas as pd
+import json
+from collections import defaultdict
 import plotly.express as px
 import plotly.graph_objects as go
 import dash
@@ -540,4 +541,5 @@ def guardar_datos_a_excel(n_clicks, datos_guardados):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8050)), debug=False)
+
 
