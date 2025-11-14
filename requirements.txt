@@ -1,5 +1,5 @@
---find-links https://download.pytorch.org/whl/torch_stable.html
-pandas==2.0.3
+pandas==2.1.4
 plotly==5.17.0
 dash==2.14.2
 gunicorn==21.2.0
+--prefer-binary
